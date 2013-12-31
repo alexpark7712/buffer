@@ -9,9 +9,8 @@ public class BulkWriteTest {
 
 		byte[] b = new byte[15];
 		for (int i = 0; i < b.length; i++) {
-			b[i] = (byte) i;
+			b[i] = (byte)i;
 		}
-
 
 		int size = buf.remaining();
 		if (b.length < size) {
@@ -24,7 +23,6 @@ public class BulkWriteTest {
 		for (int i = 0; i < buf.limit(); i++) {
 			System.out.println("buf[" + i + "]= " + buf.get(i));
 		}
-
 
 	}
 }

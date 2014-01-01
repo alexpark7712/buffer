@@ -14,6 +14,7 @@ public class ViewBufferTest {
 
 		System.out.println(ib.get(0) + " " + ib.get(1));
 
+		System.out.println("test");
 
 		buf.rewind();
 		while (buf.hasRemaining()) {
